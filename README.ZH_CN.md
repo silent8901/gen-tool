@@ -1,4 +1,4 @@
-# GenTool
+# gen-tool
 
 ## 支持 decimal 类型，生成为 decimal.Decimal 数据类型
 
@@ -7,9 +7,9 @@
 
 ```shell
  
- gentool -h  
+ gen-tool -h  
  
- Usage of gentool:
+ Usage of gen-tool:
   -db string
         input mysql or postgres or sqlite or sqlserver. consult[https://gorm.io/docs/connecting_to_the_database.html] (default "mysql")
   -dsn string
@@ -123,5 +123,5 @@ Value : False / True
 ### 使用示例
 
 ```shell
-gentool -dsn "user:pwd@tcp(127.0.0.1:3306)/database?charset=utf8mb4&parseTime=True&loc=Local" -tables "orders,doctor"
+gen-tool -dsn "user:pwd@tcp(127.0.0.1:3306)/database?charset=utf8mb4&parseTime=True&loc=Local" -tables "orders,doctor"
 ```

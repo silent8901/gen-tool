@@ -1,4 +1,4 @@
-# GenTool
+# gen-tool
 
 ## Support decimal type and generate data as decimal.Decimal
 
@@ -7,9 +7,9 @@
 
 ```shell
  
- gentool -h  
+ gen-tool -h  
  
- Usage of gentool:
+ Usage of gen-tool:
   -db string
         input mysql|postgres|sqlite|sqlserver|clickhouse. consult[https://gorm.io/docs/connecting_to_the_database.html] (default "mysql")
   -dsn string
@@ -120,5 +120,5 @@ detect integer field's unsigned type, adjust generated data type
 ### example
 
 ```shell
-gentool -dsn "user:pwd@tcp(127.0.0.1:3306)/database?charset=utf8mb4&parseTime=True&loc=Local" -tables "orders,doctor"
+gen-tool -dsn "user:pwd@tcp(127.0.0.1:3306)/database?charset=utf8mb4&parseTime=True&loc=Local" -tables "orders,doctor"
 ```
