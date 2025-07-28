@@ -1,6 +1,7 @@
 # GenTool
 
-Install GEN as a binary tool
+## Support decimal type and generate data as decimal.Decimal
+
 
 ## usage
 

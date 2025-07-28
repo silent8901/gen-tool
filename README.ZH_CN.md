@@ -1,6 +1,6 @@
 # GenTool
 
-将Gen作为二进制的方式进行安装
+## 支持 decimal 类型，生成为 decimal.Decimal 数据类型
 
 
 ## 使用方式
