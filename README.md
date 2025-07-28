@@ -40,7 +40,7 @@
 ```
 #### c
 default ""
-Is path for gen.yml
+Is path for gen.yaml
 Replace the command line with a configuration file
 The command line is the highest priority
 
