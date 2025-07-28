@@ -140,7 +140,7 @@ func parseCmdFromYaml(path string) *CmdParams {
 // argParse is parser for cmd
 func argParse() *CmdParams {
 	// choose is file or flag
-	genPath := flag.String("c", "", "is path for gen.yml")
+	genPath := flag.String("c", "", "is path for gen.yaml")
 	dsn := flag.String("dsn", "", "consult[https://gorm.io/docs/connecting_to_the_database.html]")
 	db := flag.String("db", string(dbMySQL), "input mysql|postgres|sqlite|sqlserver|clickhouse. consult[https://gorm.io/docs/connecting_to_the_database.html]")
 	tableList := flag.String("tables", "", "enter the required data table or leave it blank")
@@ -156,7 +156,7 @@ func argParse() *CmdParams {
 	fieldSignable := flag.Bool("fieldSignable", false, "detect integer field's unsigned type, adjust generated data type")
 	flag.Parse()
 
-	if *genPath != "" { //use yml config
+	if *genPath != "" { //use yaml config
 		return parseCmdFromYaml(*genPath)
 	}
 
