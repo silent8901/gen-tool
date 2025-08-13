@@ -1,4 +1,4 @@
-module gen-tool
+module github.com/silent8901/gen-tool
 
 go 1.25.0
 
