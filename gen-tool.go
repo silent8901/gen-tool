@@ -125,7 +125,6 @@ func genModels(g *gen.Generator, db *gorm.DB, tables []string) (models []interfa
 // parseCmdFromYaml parse cmd param from yaml
 func parseCmdFromYaml(path string) *CmdParams {
 	cleaned := filepath.Clean(path)
-	fmt.Println(cleaned)
 	file, err := os.Open(cleaned)
 	if err != nil {
 		log.Fatalf("parseCmdFromYaml fail %s", err.Error())
